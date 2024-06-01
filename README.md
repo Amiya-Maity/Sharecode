@@ -13,6 +13,7 @@ In today's digital era, sharing code snippets, text, or files securely and conve
 - **Community Collaboration**: By enabling effortless content sharing and file transfer, the platform fosters collaboration and knowledge exchange within communities, educational institutions, and professional networks. It serves as a valuable resource for individuals and groups seeking to share information and resources effectively.
 - **Feedback and Continuous Improvement**: Feedback mechanisms are incorporated to gather user input and suggestions for improving the platform. Continuous iteration and refinement ensure that the platform remains responsive to user needs and evolving technological trends, enhancing its utility and relevance over time.
 - **Edit Lock Feature**: A new feature, Edit Lock, allows users to turn on a lock if they want to edit content. This prevents others from making changes to the content while the lock is active.
+- **API for External Usage**: There are two API for uplaoding and downloading of texts. And I also have a vscode extension (named sharecoder) for seemlessly using from vscode. ( api_get.php and api_post.php)
 
 ## Tech Stack
 
