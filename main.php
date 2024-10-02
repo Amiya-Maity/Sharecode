@@ -1,25 +1,17 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/config.php';
 
 // Set the timezone to Kolkata
 date_default_timezone_set('Asia/Kolkata');
 
-
+// Load environment variables
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// Database credentials
-$servername = $_ENV['DB_SERVER'];
-$username = $_ENV['DB_USERNAME'];
-$password = $_ENV['DB_PASSWORD'];
-$db_name = $_ENV['DB_NAME'];
-
-
-$baseurl = $_ENV['BASE_URL'];
-
-
 try {
-    $conn = new mysqli($servername, $username, $password, $db_name);
+    // Create a new database connection using the defined constants
+    $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
     if ($conn->connect_error) {
         throw new Exception("Connection failed: " . $conn->connect_error);
